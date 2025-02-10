@@ -35,7 +35,7 @@
 
 .hero-section {
     position: relative;
-    background: url('interior.jpg') ;
+    background: url('interior.jpg');
     height: 100vh;
     display: flex;
     align-items: center;
@@ -45,10 +45,9 @@
     color: white;
     overflow: hidden;
     background-color: #000;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
 }
-
 
 .about-cafe {
     width: 50%;
@@ -101,11 +100,11 @@ img {
         padding-left: 50px;
         height: 80vh;
     }
-    
+
     .about-cafe {
         width: 70%;
     }
-    
+
     .navbar .nav-link {
         margin: 0 10px;
     }
@@ -129,7 +128,8 @@ img {
         font-size: 14px;
     }
 
-    h3, h4 {
+    h3,
+    h4 {
         font-size: 0.9em;
     }
 }
@@ -149,7 +149,55 @@ img {
         font-size: 12px;
     }
 
-    h3, h4 {
+    h3,
+    h4 {
         font-size: 0.8em;
     }
+}
+
+.social-bar {
+    position: fixed;
+    top: 80%;
+    right: 10px; 
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #333;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.facebook:hover {
+    background: #1877F2;
+}
+
+.instagram:hover {
+    background: #E4405F;
+}
+
+.youtube:hover {
+    background: #E4405F;
+}
+
+.linkedin:hover {
+    background: #0077B5;
 }
