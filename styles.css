@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+    background: rgb(107, 109, 109);
+}
+
+.navbar .nav-link {
+    color: rgb(255, 252, 252) !important;
+    margin: 0 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #b8b0af !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand img {
+    width: 70px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+
+.hero-section {
+    position: relative;
+    background: url('interior.jpg') ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 100px;
+    color: white;
+    overflow: hidden;
+    background-color: #000;
+    background-size:cover;
+    background-position: center;
+}
+
+
+.about-cafe {
+    width: 50%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 8px;
+}
+
+h3 {
+    font-size: 1em;
+    margin-bottom: 20px;
+    background: rgb(40, 87, 129);
+    border-radius: 8px;
+    color: white;
+    padding: 6px;
+    display: inline-block;
+}
+
+h4 {
+    font-size: large;
+    font-weight: bold;
+    background: rgb(95, 180, 214);
+    border-radius: 8px;
+    padding: 6px;
+    display: inline-block;
+}
+
+.content {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bottom {
+    margin-top: 12px;
+    text-align: justify;
+}
+
+
+@media (max-width: 992px) {
+    .hero-section {
+        padding-left: 50px;
+        height: 80vh;
+    }
+    
+    .about-cafe {
+        width: 70%;
+    }
+    
+    .navbar .nav-link {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+        padding-left: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-cafe {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .navbar .nav-link {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    h3, h4 {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 60vh;
+        padding-left: 10px;
+    }
+
+    .about-cafe {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .navbar .nav-link {
+        font-size: 12px;
+    }
+
+    h3, h4 {
+        font-size: 0.8em;
+    }
+}
